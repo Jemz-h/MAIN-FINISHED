@@ -1,0 +1,137 @@
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="Project_Sauyo.GAME.MISC.Result_Text"
+    CanBeDismissedByTappingOutsideOfPopup="False"
+    HorizontalOptions="Fill"
+    VerticalOptions="Fill">
+
+    <AbsoluteLayout>
+
+        <!-- TOP IMAGE BORDER -->
+        <Border
+            BackgroundColor="White"
+            Stroke="#CCCCCC"
+            StrokeThickness="3"
+            AbsoluteLayout.LayoutBounds="0.5,0.38,0.92,0.27"
+            Margin="10,-65,10,10"
+              WidthRequest="290"
+             HeightRequest="200"
+            AbsoluteLayout.LayoutFlags="All">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="12"/>
+            </Border.StrokeShape>
+
+            <Grid>
+
+                <Label
+                    x:Name="Questionnaire"
+                    Text="Question Label 1"
+                        FontFamily="MontserratRegular"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+
+
+                <!-- TOP Megaphone -->
+                <ImageButton
+                    x:Name="TopMegaphoneButton"
+                    Source="megaphone.png"
+                    WidthRequest="35"
+                    HeightRequest="35"
+                    BackgroundColor="Transparent"
+                    Padding="0"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    Margin="8"
+                    Clicked="OnMegaphoneClicked" />
+
+            </Grid>
+        </Border>
+
+
+        <!-- BOTTOM RESPONSE BORDER -->
+        <Border
+            BackgroundColor="White"
+            Stroke="#B6771D"
+            StrokeThickness="3"
+            Padding="20"
+              WidthRequest="280"
+             HeightRequest="330"
+             Margin="10,-100,10,10"
+            AbsoluteLayout.LayoutBounds="0.5,1,0.92,0.42"
+            AbsoluteLayout.LayoutFlags="All">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="15"/>
+            </Border.StrokeShape>
+
+            <Grid>
+
+                <!-- Content -->
+                <VerticalStackLayout Spacing="5">
+
+                    <Label Text="CORRECT!"
+                           x:Name="Result_Response"
+                           FontFamily="SuperCartoon"
+                           FontSize="36"
+                           HorizontalOptions="Center"
+                           TextColor="#32CD32"/>
+
+                    <Label Text="THE IMAGE SHOWN ABOVE IS THE SUN."
+       x:Name="AnswerLabel"
+       FontFamily="SuperCartoon"
+       FontSize="20"
+       TextColor="Black"
+       HorizontalTextAlignment="Center"
+       Margin="0,0,0,35"/>
+
+                    <Label Text="FUN FACT!"
+                           x:Name="Factlbl"
+                           FontFamily="SuperCartoon"
+                           FontSize="36"
+                           TextColor="#00BFFF"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="THE SUN IS THE CENTER OF OUR SOLAR SYSTEM."
+                           x:Name="Explanationlbl"
+                           FontFamily="SuperCartoon"
+                           FontSize="20"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Button Text="CONTINUE"
+                            Clicked="OnContinueClicked"
+                            BackgroundColor="#32CD32"
+                            TextColor="Black"
+                            FontFamily="SuperCartoon"
+                            FontSize="20"
+                            CornerRadius="12"
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            WidthRequest="165"/>
+                </VerticalStackLayout>
+
+                <!-- BOTTOM Megaphone -->
+                <ImageButton
+                    x:Name="BottomMegaphoneButton"
+                    Source="megaphone.png"
+                    WidthRequest="35"
+                    HeightRequest="35"
+                    BackgroundColor="Transparent"
+                    Padding="0"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    Margin="15,-1,-4,0"
+                    Clicked="OnMegaphoneClicked" />
+
+            </Grid>
+        </Border>
+
+    </AbsoluteLayout>
+
+</toolkit:Popup>

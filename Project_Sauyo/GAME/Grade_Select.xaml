@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Sauyo.Grade_Select"
+             Title="Grade Level Selection"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="background.png">
+
+    <AbsoluteLayout HorizontalOptions="Fill" VerticalOptions="Fill">
+
+        <Grid AbsoluteLayout.LayoutBounds="0.5,0.07,-1,-1"
+              AbsoluteLayout.LayoutFlags="PositionProportional"
+              HorizontalOptions="Center">
+            <Label Text="SELECT&#10;GRADE"
+                   FontSize="40"
+                   CharacterSpacing="1.5"
+                   LineHeight="1.2"
+                   FontFamily="SuperCartoon"
+                   TextColor="Black"
+                   TranslationX="2"
+                   TranslationY="2"
+                   HorizontalTextAlignment="Center" />
+            
+            <Label Text="SELECT&#10;GRADE"
+                   FontSize="40"
+                   CharacterSpacing="1.5"
+                   LineHeight="1.2"
+                   FontFamily="SuperCartoon"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center" />
+        </Grid>
+
+        <AbsoluteLayout x:Name="CarouselContainer"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1"
+                        AbsoluteLayout.LayoutFlags="All">
+            
+            <AbsoluteLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipedLeft" />
+                <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipedRight" />
+            </AbsoluteLayout.GestureRecognizers>
+
+            <Image x:Name="LeftImage"
+               Source="edsa.png"
+               Aspect="AspectFit"
+               BackgroundColor="Transparent"
+               AbsoluteLayout.LayoutBounds="-0.40,0.47,0.59,0.35"
+               AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnImageTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image x:Name="CenterImage"
+               Source="intramuros.png"
+               Aspect="AspectFit"
+               BackgroundColor="Transparent"
+               AbsoluteLayout.LayoutBounds="0.58,0.48,1.2,0.55"
+               AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnImageTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image x:Name="RightImage"
+               Source="rizalmonu.png"
+               Aspect="AspectFit"
+               BackgroundColor="Transparent"
+               AbsoluteLayout.LayoutBounds="2,0.49,0.62,0.36"
+               AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnImageTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+        </AbsoluteLayout>
+
+        <Grid AbsoluteLayout.LayoutBounds="0.5,0.63,-1,-1"
+              AbsoluteLayout.LayoutFlags="PositionProportional"
+              HorizontalOptions="Center">
+            <Label x:Name="GradeLabel"
+                   FontSize="30"
+                   FontFamily="SuperCartoon"
+                   TextColor="Black"
+                   TranslationX="2"
+                   TranslationY="2"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="GradeLabelShadow"
+                   FontSize="30"
+                   FontFamily="SuperCartoon"
+                   TextColor="#F6FF79"
+                   HorizontalTextAlignment="Center" />
+        </Grid>
+
+        <Border 
+            AbsoluteLayout.LayoutBounds="0.5,0.99,0.99,0.09"
+            AbsoluteLayout.LayoutFlags="All"
+            Background="Black"
+            StrokeThickness="0"
+            StrokeShape="RoundRectangle 25"
+            Opacity="0.7">
+        </Border>
+
+
+
+        <ImageButton x:Name="back_button"
+                     Source="back_button.png"
+                     Aspect="AspectFit"
+                     AbsoluteLayout.LayoutBounds="0.07,0.985,0.13,0.08"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Clicked="OnBackButtonClicked" />
+
+        <ImageButton x:Name="settings_button"
+                     Source="settings_button.png"
+                     Aspect="AspectFit"
+                     AbsoluteLayout.LayoutBounds="0.95,0.985,0.14,0.08"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Clicked="OnSettingsButtonClicked" />
+
+        <BoxView x:Name="Overlay"
+                 IsVisible="False"
+                 Color="black"
+                 Opacity="0.6"
+                 InputTransparent="False"
+                 AbsoluteLayout.LayoutBounds="0,0,1,1"
+                 AbsoluteLayout.LayoutFlags="All" />
+
+        <Border x:Name="PopupContainer"
+                IsVisible="False"
+                WidthRequest="300"
+                HeightRequest="300"
+                StrokeShape="RoundRectangle 20"
+                BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0.5,0.5,300,300"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Padding="0">
+
+            <AbsoluteLayout HorizontalOptions="Fill" VerticalOptions="Fill">
+
+                <Image Source="greenboard.png"
+                       Aspect="AspectFill"
+                       AbsoluteLayout.LayoutBounds="0,0,1,1"
+                       AbsoluteLayout.LayoutFlags="All"
+                       Scale="1.4" />
+
+                <Grid AbsoluteLayout.LayoutBounds="0.5,0.1,-1,-1"
+                      AbsoluteLayout.LayoutFlags="PositionProportional"
+                      Margin="0,10,0,0"
+                      HorizontalOptions="Center">
+                    <Label Text="CHOOSE SUBJECT"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           TranslationX="2"
+                           TranslationY="2"
+                           HorizontalTextAlignment="Center" />
+                    <Label Text="CHOOSE SUBJECT"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           FontFamily="SuperCartoon"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center" />
+                </Grid>
+
+                <Image Source="numbers.png"
+                       HeightRequest="40"
+                       AbsoluteLayout.LayoutBounds="0.2,0.46,-1,-1"
+                       AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+                <Button Text="MATH"
+                        FontSize="25"
+                        FontAttributes="Bold"
+                        FontFamily="SuperCartoon"
+                        TextColor="Black"
+                        BackgroundColor="#9C27B0"
+                        WidthRequest="210"
+                        HeightRequest="60"
+                        AbsoluteLayout.LayoutBounds="0.5,0.45,-1,-1"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        Clicked="OnMathClicked" />
+
+                <Image Source="language.png"
+                       HeightRequest="40"
+                       AbsoluteLayout.LayoutBounds="0.2,0.77,-1,-1"
+                       AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+                <Button Text="ENGLISH"
+                        FontSize="25"
+                        FontAttributes="Bold"
+                        FontFamily="SuperCartoon"
+                        TextColor="Black"
+                        BackgroundColor="#F48FB1"
+                        WidthRequest="210"
+                        HeightRequest="60"
+                        AbsoluteLayout.LayoutBounds="0.5,0.80,-1,-1"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        Clicked="OnEnglishClicked" />
+                
+                
+
+                <ImageButton Source="close_button.png"
+                 BackgroundColor="Transparent"
+                 Padding="10"
+                 WidthRequest="30"
+                 HeightRequest="30"
+                 AbsoluteLayout.LayoutBounds="0.99,0.01,-1,-1"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 Clicked="OnClosePopupClicked" />
+
+            </AbsoluteLayout>
+        </Border>
+
+    </AbsoluteLayout>
+</ContentPage>

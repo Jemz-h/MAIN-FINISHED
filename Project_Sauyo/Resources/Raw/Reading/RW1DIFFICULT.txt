@@ -1,0 +1,44 @@
+﻿QR01
+Jake is putting his toys in ABC order. He has an Airplane, a Boat, a Car, a Dinosaur, and an Elephant. Which toy is second to last in ABC order?
+Airplane
+Boat
+Car
+Dinosaur
+Dinosaur
+Dinosaur is second to last! After Car and before Elephant.
+
+QR02
+Anna, Ben, Carla, Dylan, and Ella are standing in a row. If you arrange their names alphabetically, who stands in the third place?
+Carla
+Ben
+Dylan
+Ella
+Carla
+Carla is third: Anna, Ben, Carla, Dylan, Ella.
+
+QR03
+Emma is drawing pictures of her favorite animals. She draws A for Alligator, B for Bear, C for Cat, and D for Dog. Which animal starts with the next letter after D?
+Alligator
+Bear
+Dog
+Elephant
+Elephant
+Elephant begins with E — the next letter after D!
+
+QR04
+Look at these words: Dog, Apple, Cat, Egg, Ball. What order should they go in, from first to last?
+Apple, Ball, Cat, Dog, Egg
+Ball, Apple, Dog, Cat, Egg
+Cat, Dog, Egg, Ball, Apple
+Egg, Dog, Cat, Egg, Ball
+Apple, Ball, Cat, Dog, Egg
+Correct ABC order is Apple (A), Ball (B), Cat (C), Dog (D), Egg (E).
+
+QR05
+Imagine you’re stepping backwards on the alphabet ladder and stop on E. What letter is one step before it?
+A
+B
+D
+C
+D
+D comes right before E. Alphabet goes ... C D E.

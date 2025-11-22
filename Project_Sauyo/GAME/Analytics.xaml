@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Project_Sauyo.Analytics"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+
+        <!-- BACKGROUND -->
+        <Image Source="class2.png"
+               Aspect="Fill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill" />
+
+        <!-- MAIN WHITE AREA -->
+        <Grid VerticalOptions="Center"
+              HorizontalOptions="Center">
+
+            <ScrollView
+                VerticalScrollBarVisibility="Never"
+                HorizontalScrollBarVisibility="Never"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+
+                <Border BackgroundColor="White"
+                        StrokeShape="RoundRectangle 20"
+                        Padding="10"
+                        WidthRequest="310"
+                        HeightRequest="625">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <!-- LEVEL COMPLETE -->
+                        <Border BackgroundColor="#2D5F3F"
+                                StrokeShape="RoundRectangle 10"
+                                Padding="10"
+                                Margin="0,0,0,-5">
+
+                            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+                                  RowSpacing="6">
+
+                                <Label Grid.Row="0"
+                                       x:Name="LevelComplete"
+                                       Text="LEVEL COMPLETE!"
+                                       FontFamily="SuperCartoon"
+                                       FontAttributes="Bold"
+                                       FontSize="20"
+                                       TextColor="White"
+                                       HorizontalOptions="Center">
+                                    <Label.Shadow>
+                                        <Shadow Brush="Black"
+                                                Offset="0,5"
+                                                Radius="1"
+                                                Opacity="0.5"/>
+                                    </Label.Shadow>
+                                </Label>
+
+                                <!-- DIFFICULTY LABEL -->
+                                <Label Grid.Row="0"
+                                       x:Name="DifficultyLabel"
+                                       Text="Easy"
+                                       FontFamily="SuperCartoon"
+                                       FontSize="14"
+                                       TextColor="White"
+                                       HorizontalOptions="End"
+                                       Margin="0,35,10,0"/>
+
+                                <Border Grid.Row="1"
+                                        StrokeShape="RoundRectangle 10"
+                                        Padding="0"
+                                        HeightRequest="150"
+                                        WidthRequest="255">
+
+                                    <Image x:Name="picHold"
+                                           Source="draft01.png"
+                                           Aspect="AspectFill" />
+                                </Border>
+
+                                <!-- SCORE + CHARACTERS -->
+                                <Grid Grid.Row="2"
+                                      ColumnDefinitions="*,Auto,*"
+                                      RowDefinitions="Auto,Auto,Auto"
+                                      RowSpacing="3">
+
+                                    <!-- LEFT CHARACTER -->
+                                    <Image Grid.Column="0"
+                                           Grid.RowSpan="3"
+                                           x:Name="showOyo"
+                                           Source="oyo.png"
+                                           Aspect="AspectFill"
+                                           WidthRequest="140"
+                                           HeightRequest="175"
+                                           HorizontalOptions="End"
+                                           Margin="0,30,-27,0"/>
+
+                                    <!-- SCORE PANEL -->
+                                    <VerticalStackLayout Grid.Column="1"
+                                                         Grid.RowSpan="3"
+                                                         Spacing="3"
+                                                         HorizontalOptions="Center">
+
+                                        <Label x:Name="achievementText"
+                                               Text="PERFECT!"
+                                               FontFamily="SuperCartoon"
+                                               FontAttributes="Bold"
+                                               FontSize="23"
+                                               TextColor="White"
+                                               HorizontalOptions="Center"/>
+
+                                        <Label Text="YOU SCORED"
+                                               FontFamily="SuperCartoon"
+                                               FontSize="15"
+                                               TextColor="White"
+                                               HorizontalOptions="Center" />
+
+                                        <Label x:Name="ScoreLabel"
+                                               Text="5/5"
+                                               FontFamily="SuperCartoon"
+                                               FontAttributes="Bold"
+                                               FontSize="24"
+                                               TextColor="White"
+                                               HorizontalOptions="Center"/>
+
+                                        <Border WidthRequest="40"
+                                                HeightRequest="40"
+                                                StrokeShape="RoundRectangle 25">
+                                            <Image x:Name="Coin"
+                                                   Source="gold.png"
+                                                   Aspect="AspectFit" />
+                                        </Border>
+
+                                        <Label Text="REWARD"
+                                               FontFamily="SuperCartoon"
+                                               FontAttributes="Bold"
+                                               FontSize="18"
+                                               TextColor="White"
+                                               HorizontalOptions="Center"/>
+                                    </VerticalStackLayout>
+
+                                    <!-- RIGHT CHARACTER -->
+                                    <Image Grid.Column="2"
+                                           Grid.RowSpan="3"
+                                           x:Name="showSisa"
+                                           Source="sisa.png"
+                                           Aspect="AspectFill"
+                                           WidthRequest="100"
+                                           HeightRequest="130"
+                                           HorizontalOptions="Start"
+                                           Margin="-10,60,0,0"/>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <!-- NEXT LEVEL BUTTON -->
+                        <Border x:Name="NextLevelBtn"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="8">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="NextLevelTap" Tapped="OnNextLevelClicked" />
+                            </Border.GestureRecognizers>
+
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#2B1DF0" Offset="0.0" />
+                                    <GradientStop Color="#2298CA" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <HorizontalStackLayout Spacing="10" Margin="10,0,0,0">
+                                <Image Source="next.png" WidthRequest="35"/>
+                                <Label Text="NEXT LEVEL"
+                                       FontFamily="SuperCartoon"
+                                       FontAttributes="Bold"
+                                       FontSize="26"
+                                       TextColor="White" />
+                            </HorizontalStackLayout>
+                        </Border>
+
+                        <!-- RESTART LEVEL -->
+                        <Border StrokeShape="RoundRectangle 12" Padding="8">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnRestartLevelClicked" />
+                            </Border.GestureRecognizers>
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#AD1DF0" Offset="0.0" />
+                                    <GradientStop Color="#6022CA" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <HorizontalStackLayout Spacing="10" Margin="10,0,0,0">
+                                <Image Source="reset.png" WidthRequest="35"/>
+                                <Label Text="RESTART LEVEL"
+                                       FontFamily="SuperCartoon"
+                                       FontAttributes="Bold"
+                                       FontSize="26"
+                                       TextColor="White" />
+                            </HorizontalStackLayout>
+                        </Border>
+
+                        <!-- RETURN TO MAP -->
+                        <Border StrokeShape="RoundRectangle 12" Padding="8">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnReturnMapClicked" />
+                            </Border.GestureRecognizers>
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#ED1C24" Offset="0.0" />
+                                    <GradientStop Color="#CA2273" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <HorizontalStackLayout Spacing="10" Margin="10,0,0,0">
+                                <Image Source="back2.png" WidthRequest="35"/>
+                                <Label Text="RETURN TO MAP"
+                                       FontFamily="SuperCartoon"
+                                       FontAttributes="Bold"
+                                       FontSize="26"
+                                       TextColor="White"/>
+                            </HorizontalStackLayout>
+                        </Border>
+
+                        <!-- RETURN TO HOME -->
+                        <Border StrokeShape="RoundRectangle 12" Padding="8">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnReturnHomeClicked" />
+                            </Border.GestureRecognizers>
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#F0671D" Offset="0.0" />
+                                    <GradientStop Color="#FFD500" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <HorizontalStackLayout Spacing="10" Margin="10,0,0,0">
+                                <Image Source="home2.png" WidthRequest="35"/>
+                                <Label Text="RETURN TO HOME"
+                                       FontFamily="SuperCartoon"
+                                       FontAttributes="Bold"
+                                       FontSize="26"
+                                       TextColor="White"/>
+                            </HorizontalStackLayout>
+                        </Border>
+
+                    </VerticalStackLayout>
+
+                </Border>
+            </ScrollView>
+        </Grid>
+    </Grid>
+</ContentPage>

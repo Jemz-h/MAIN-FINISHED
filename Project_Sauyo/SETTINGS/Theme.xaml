@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup 
+    x:Class="Project_Sauyo.SETTINGS.Theme" 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <Border
+        BackgroundColor="White"
+        Stroke="Transparent"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 50"
+        Padding="0"
+        WidthRequest="350"
+        HeightRequest="350"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+
+        <AbsoluteLayout>
+
+            <!-- Title -->
+            <Label 
+                Text="CHANGE THEME" 
+                FontFamily="SuperCartoon" 
+                FontSize="32" 
+                TextColor="#000000" 
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                AbsoluteLayout.LayoutBounds="0.5,0.09,-1,-1" 
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+            <!-- Close button -->
+            <ImageButton 
+                Source="close_button.png" 
+                x:Name="close_button" 
+                BackgroundColor="Transparent" 
+                Padding="0" 
+                Aspect="AspectFit" 
+                Clicked="OnCloseButtonClicked" 
+                AbsoluteLayout.LayoutBounds="0.92,0.08,20,20" 
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+            <!-- Classroom Theme -->
+            <Border WidthRequest="85" HeightRequest="175" StrokeShape="RoundRectangle 16"
+                    AbsoluteLayout.LayoutBounds="0.12,0.42,-1,-1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Image Source="class1.png" Aspect="AspectFill">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnClassroomTapped"/>
+                    </Image.GestureRecognizers>
+                    <Image.Clip>
+                        <RoundRectangleGeometry CornerRadius="16" Rect="0,0,85,188"/>
+                    </Image.Clip>
+                </Image>
+            </Border>
+            <Border x:Name="ClassroomOverlay"
+                    WidthRequest="85" HeightRequest="175"
+                    StrokeShape="RoundRectangle 16"
+                    BackgroundColor="#BF000000"
+                    Stroke="Transparent"
+                    IsVisible="True"
+                    AbsoluteLayout.LayoutBounds="0.12,0.42,-1,-1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image x:Name="ClassroomCheck"
+                   Source="checked_button.png"
+                   WidthRequest="58" HeightRequest="58"
+                   Aspect="AspectFit"
+                   IsVisible="True"
+                   AbsoluteLayout.LayoutBounds="0.15,0.45,-1,-1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <!-- Nature Theme -->
+            <Border WidthRequest="85" HeightRequest="175" StrokeShape="RoundRectangle 16"
+                    AbsoluteLayout.LayoutBounds="0.49,0.42,-1,-1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Image Source="forest.png" Aspect="AspectFill">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnNatureTapped"/>
+                    </Image.GestureRecognizers>
+                    <Image.Clip>
+                        <RoundRectangleGeometry CornerRadius="16" Rect="0,0,85,188"/>
+                    </Image.Clip>
+                </Image>
+            </Border>
+            <Border x:Name="NatureOverlay"
+                    WidthRequest="85" HeightRequest="175"
+                    StrokeShape="RoundRectangle 16"
+                    BackgroundColor="#BF000000"
+                    Stroke="Transparent"
+                    IsVisible="False"
+                    AbsoluteLayout.LayoutBounds="0.49,0.42,-1,-1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image x:Name="NatureCheck"
+                   Source="checked_button.png"
+                   WidthRequest="58" HeightRequest="58"
+                   Aspect="AspectFit"
+                   IsVisible="False"
+                   AbsoluteLayout.LayoutBounds="0.49,0.45,-1,-1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <!-- Space Theme -->
+            <Border WidthRequest="85" HeightRequest="175" StrokeShape="RoundRectangle 16"
+                    AbsoluteLayout.LayoutBounds="0.87,0.42,-1,-1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Image Source="space.png" Aspect="AspectFill">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSpaceTapped"/>
+                    </Image.GestureRecognizers>
+                    <Image.Clip>
+                        <RoundRectangleGeometry CornerRadius="16" Rect="0,0,85,188"/>
+                    </Image.Clip>
+                </Image>
+            </Border>
+            <Border x:Name="SpaceOverlay"
+                    WidthRequest="85" HeightRequest="175"
+                    StrokeShape="RoundRectangle 16"
+                    BackgroundColor="#BF000000"
+                    Stroke="Transparent"
+                    IsVisible="False"
+                    AbsoluteLayout.LayoutBounds="0.87,0.42,-1,-1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image x:Name="SpaceCheck"
+                   Source="checked_button.png"
+                   WidthRequest="58" HeightRequest="58"
+                   Aspect="AspectFit"
+                   IsVisible="False"
+                   AbsoluteLayout.LayoutBounds="0.83,0.45,-1,-1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <!-- Theme Labels -->
+            <Label Text="CLASSROOM" FontFamily="SuperCartoon" FontSize="16" TextColor="#000000"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds="0.12,0.77,-1,-1" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Label Text="NATURE" FontFamily="SuperCartoon" FontSize="16" TextColor="#000000"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds="0.5,0.77,-1,-1" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Label Text="SPACE" FontFamily="SuperCartoon" FontSize="16" TextColor="#000000"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds="0.83,0.77,-1,-1" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <!-- Confirm Button -->
+            <Button Text="CONFIRM" FontFamily="SuperCartoon" FontSize="24" TextColor="#000000"
+                    BackgroundColor="#79FF9D" WidthRequest="127" HeightRequest="45" CornerRadius="20"
+                    AbsoluteLayout.LayoutBounds="0.12,0.95,-1,-1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Clicked="OnConfirmClicked"/>
+
+            <!-- Cancel Button -->
+            <Button Text="CANCEL" FontFamily="SuperCartoon" FontSize="24" TextColor="#000000"
+                    BackgroundColor="#FF797C" WidthRequest="127" HeightRequest="45" CornerRadius="20"
+                    AbsoluteLayout.LayoutBounds="0.9,0.95,-1,-1" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Clicked="OnCancelClicked"/>
+
+        </AbsoluteLayout>
+    </Border>
+</toolkit:Popup>

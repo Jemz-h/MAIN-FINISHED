@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    x:Class="Project_Sauyo.Break"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <Grid WidthRequest="347" HeightRequest="476" VerticalOptions="Center" HorizontalOptions="Center">
+
+
+        <BoxView
+                BackgroundColor="#FFACAC"
+                CornerRadius="20" 
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill" />
+
+        <VerticalStackLayout
+                Spacing="20"
+                Padding="20">
+
+            <Grid HorizontalOptions="Center" TranslationY="5">
+                <Label Text="Break Time!"
+                       FontSize="38"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="-1" TranslationY="-1"/>
+
+                <Label Text="Break Time!"
+                       FontSize="38"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="1" TranslationY="-1"/>
+
+                <Label Text="Break Time!"
+                       FontSize="38"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="-1" TranslationY="1"/>
+
+                <Label Text="Break Time!"
+                       FontSize="38"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="1" TranslationY="1"/>
+
+                <Label Text="Break Time!"
+                       FontSize="38"
+                       FontFamily="SuperCartoon"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </Grid>
+
+            <Image 
+                    Source="sisapagod.png" 
+                    Aspect="AspectFit"
+                    WidthRequest="360"
+                    HeightRequest="360" TranslationY="-70" />
+
+            <Grid HorizontalOptions="Center" WidthRequest="314" TranslationY="-165">
+                <Label Text="Sisa’s tired. Go out and have fun with your friends for a while!"
+                           FontSize="26"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="1" TranslationY="1"/>
+
+                <Label Text="Sisa’s tired. Go out and have fun with your friends for a while!"
+                           FontSize="26"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="1" TranslationY="-1"/>
+
+                <Label Text="Sisa’s tired. Go out and have fun with your friends for a while!"
+                           FontSize="26"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="-1" TranslationY="1"/>
+
+
+                <Label Text="Sisa’s tired. Go out and have fun with your friends for a while!"
+                           FontSize="26"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="-1" TranslationY="-1"/>
+
+                <Label Text="Sisa’s tired. Go out and have fun with your friends for a while!"
+                           FontSize="26"
+                           FontFamily="SuperCartoon"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"/>
+            </Grid>
+
+            <Button
+                    Text="Okay!"
+                    FontSize="22"
+                    TextColor="#000000"
+                    FontFamily="SuperCartoon"
+                    Clicked="OnCloseClicked"
+                    BackgroundColor="#FFFFFF"
+                    HeightRequest="45"
+                    WidthRequest="150"
+                    TranslationY="-160"
+                    CornerRadius="10" />
+        </VerticalStackLayout>
+    </Grid>
+</toolkit:Popup>

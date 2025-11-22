@@ -1,0 +1,51 @@
+NW1_4-5_Easy
+
+QR01
+q1n45wk1.png
+Which group has only 1 car?
+A
+B
+C
+D
+2
+The question asks for just one car, and group B has only one car!
+
+QRO2
+q2n45wk1.png
+How many ears do we have?
+1
+3
+4
+2
+4 
+You have one ear on left side and one ear on the right side. That makes two ears!
+
+QRo3
+q3n45wk1.png
+How many nose/s do you have?
+4
+1
+2
+3
+2
+You have just one nose right in the middle of your face.
+
+QR04
+—
+How many candies are there if you have one in your left hand and one more in your right?
+3
+1
+4
+2
+4
+One candy plus another candy equals two candies!
+
+QR05
+—
+What is the number that comes before 3?
+4
+2
+1
+5
+2
+If we count starting 1, we say "1, 2, 3." The number 2 comes right before 3, therefore 2 is the answer.

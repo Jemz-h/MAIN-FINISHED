@@ -1,0 +1,51 @@
+NW1_4-5_Difficult
+
+QR01
+diffq1n45wk1.png
+If you have 1 cat and 1 dog, how many pets do you have?
+1
+3
+2
+4
+3
+1 + 1 = 2 pets.
+
+QR02
+diffq2n45wk1.png
+Peter has 2 red shirts and 2 blue shirts. How many shirts does he have?
+4
+5
+2
+3
+1
+2 + 2 = 4 shirts.
+
+QR03
+applebanana.png
+Dad bought 3 apples and 1 banana. How many fruits are there?
+2
+4
+1
+5
+2
+3 + 1 = 4 fruits.
+
+QR04
+—
+The teacher gives 1 book each to Ana, Bob, and Robert. How many books?
+2
+4
+3
+5
+3
+There are 3 friends, so she needs 3 books.
+
+QR05
+—
+You have 10 pencils. Anna borrowed 3 and Elsa borrowed 4. How many left?
+5
+3
+4
+1
+2
+10 − (3 + 4) = 3 pencils left.

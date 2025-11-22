@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Sauyo.Signup"
+             Title="SignupPage3"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <AbsoluteLayout>
+
+        <Image Source="class1.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All" />
+
+        <Border Stroke="Black"
+                StrokeThickness="2"
+                BackgroundColor="White"
+                StrokeShape="RoundRectangle 20"
+                AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.95"
+                AbsoluteLayout.LayoutFlags="All"
+                Padding="15">
+
+            <VerticalStackLayout Spacing="4">
+
+                <Label Text="Welcome Student!"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="Tell us something about you!"
+                       FontSize="14"
+                       FontFamily="SuperCartoon"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,0,0,10" />
+
+                <Entry x:Name="FirstNameEntry"
+                       Placeholder="First Name"
+                       FontFamily="SuperCartoon"
+                       FontSize="14"
+                       BackgroundColor="#F0F0F0"
+                       TextColor="Black"
+                       Margin="0,0,0,5" />
+
+                <Entry x:Name="LastNameEntry"
+                       Placeholder="Last Name"
+                       FontFamily="SuperCartoon"
+                       FontSize="14"
+                       BackgroundColor="#F0F0F0"
+                       TextColor="Black"
+                       Margin="0,0,0,5" />
+
+                <Entry x:Name="NicknameEntry"
+                       Placeholder="Nickname"
+                       FontFamily="SuperCartoon"
+                       FontSize="14"
+                       BackgroundColor="#F0F0F0"
+                       TextColor="Black"
+                       Margin="0,0,0,5" />
+
+                <DatePicker x:Name="BirthdayPicker"
+                            FontFamily="SuperCartoon"
+                            FontSize="14"
+                            TextColor="Black"
+                            BackgroundColor="#F0F0F0"
+                            Margin="0,0,0,5" />
+
+                <Entry x:Name="BarangayEntry"
+                       Placeholder="Barangay"
+                       FontFamily="SuperCartoon"
+                       FontSize="14"
+                       BackgroundColor="#F0F0F0"
+                       TextColor="Black"
+                       Margin="0,0,0,5" />
+
+                <Label Text="Sex"
+                       FontFamily="SuperCartoon"
+                       FontSize="14"
+                       TextColor="Black"
+                       Margin="0,0.5,0,1" />
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="5" HorizontalOptions="Fill">
+                    <Image Source="male.png"
+                           WidthRequest="80"
+                           HeightRequest="70"
+                           Margin="10,1,0,0"
+                           Grid.Column="0"
+                           HorizontalOptions="Center" />
+
+                    <Image Source="female.png"
+                           WidthRequest="80"
+                           HeightRequest="74"
+                           Margin="0,0,10,0"
+                           Grid.Column="1"
+                           HorizontalOptions="Center" />
+                </Grid>
+
+                <Button x:Name="ConfirmBtn"
+                        Text="SUBMIT"
+                        BackgroundColor="#79FF9D"
+                        TextColor="Black"
+                        FontFamily="SuperCartoon"
+                        FontSize="16"
+                        CornerRadius="20"
+                        Margin="0,10,0,0"
+                        Clicked="OnConfirmClicked" />
+
+                <Button Text="ALREADY HAVE AN ACCOUNT? CLICK ME!"
+                        BackgroundColor="Transparent"
+                        TextColor="#FFD700"
+                        FontFamily="SuperCartoon"
+                        FontSize="12"
+                        BorderColor="#FFD700"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        Clicked="OnClickMeClicked"
+                        HorizontalOptions="Center"
+                        Margin="0,5,0,0" />
+
+            </VerticalStackLayout>
+        </Border>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Sauyo.Login"
+             NavigationPage.HasNavigationBar="False"
+             Title="NewPage1">
+
+    <AbsoluteLayout>
+
+        <Image Source="class1.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All" />
+
+        <Image Source="oyo.png"
+               WidthRequest="120"
+               HeightRequest="150"
+               AbsoluteLayout.LayoutBounds="0.0,0.12,90,150"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Image Source="sisa.png"
+               WidthRequest="110"
+               HeightRequest="110"
+               AbsoluteLayout.LayoutBounds="1.0,0.19,90,110"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.19,300,100"
+                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                     Spacing="0"
+                     HorizontalOptions="Center">
+            <Label Text="WELCOME"
+                   FontSize="35"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="SuperCartoon">
+                <Label.Shadow>
+                    <Shadow Brush="Black" Offset="1,1" Radius="3" Opacity="1" />
+                </Label.Shadow>
+            </Label>
+
+            <Label Text="BACK"
+                   FontSize="35"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="SuperCartoon">
+                <Label.Shadow>
+                    <Shadow Brush="Black" Offset="1,1" Radius="3" Opacity="1" />
+                </Label.Shadow>
+            </Label>
+        </StackLayout>
+
+        <Label x:Name="login_to_signup"
+               Text="LOGIN TO CONTINUE YOUR ADVENTURE"
+               FontSize="13"
+               TextColor="Yellow"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.5,0.35,280,40"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               FontFamily="SuperCartoon" />
+
+        <Border Stroke="Black"
+                StrokeThickness="2"
+                BackgroundColor="#FFFBD1"
+                WidthRequest="240"
+                HeightRequest="44"
+                AbsoluteLayout.LayoutBounds="0.5,0.39,240,44"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                StrokeShape="RoundRectangle 15">
+            <Grid ColumnDefinitions="Auto,*"
+                  Padding="1,0"
+                  BackgroundColor="white"
+                  VerticalOptions="Center">
+                <Image Source="defaultprofile.png"
+                       WidthRequest="28"
+                       HeightRequest="28"
+                       Margin="10,0,5,0"
+                       VerticalOptions="Center" />
+                <Entry x:Name="NicknameEntry"
+                       Grid.Column="1"
+                       Placeholder="Enter nickname"
+                       PlaceholderColor="Black"
+                       FontSize="18"
+                       BackgroundColor="white"
+                       TextColor="Black"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Margin="5,0,0,0"
+                       FontFamily="SuperCartoon" />
+            </Grid>
+        </Border>
+
+        <Border StrokeThickness="2"
+                Stroke="Black"
+                BackgroundColor="White"
+                StrokeShape="RoundRectangle 15"
+                WidthRequest="240"
+                HeightRequest="44"
+                AbsoluteLayout.LayoutBounds="0.5,0.48,240,44"
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Grid ColumnDefinitions="Auto,*" VerticalOptions="Center">
+                <Image Source="birthdaycake.png"
+                       WidthRequest="26"
+                       HeightRequest="26"
+                       Margin="17,0,4,0"
+                       VerticalOptions="Center" />
+                <DatePicker x:Name="birthdayPicker"
+                            Grid.Column="1"
+                            FontSize="16"
+                            TextColor="Black"
+                            FontFamily="SuperCartoon" />
+            </Grid>
+        </Border>
+
+        <Button Text="Start"
+                FontSize="24"
+                WidthRequest="240"
+                HeightRequest="40"
+                BackgroundColor="#79A4FF"
+                TextColor="Black"
+                CornerRadius="25"
+                Clicked="OnStartClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.59,240,40"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                FontFamily="SuperCartoon" />
+
+        <Label x:Name="greetingLabel"
+               Text="No nickname yet? Click the button bellow!"
+               FontFamily="SuperCartoon"
+               FontSize="12"
+               TextColor="#ffffff30"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.5,0.70,280,40"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Button Text="Sign Up"
+                FontSize="25"
+                WidthRequest="170"
+                HeightRequest="44"
+                BackgroundColor="#ffffff30"
+                TextColor="Black"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="30"
+                FontFamily="SuperCartoon"
+                Clicked="OnSignUpClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.75,170,44"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿QR01
+Look at these words: cat, apple, bird. Which one comes first in ABC order?
+cat
+apple
+bird
+carrot
+apple
+Apple starts with A, so it is first in ABC order.
+
+QR02
+Which word comes last alphabetically?
+Ball
+Bag
+Bat
+Bee
+Bat
+Bat comes last because BA-T is after BA-G and BA-L.
+
+QR03
+What letter comes before D?
+A
+C
+E
+B
+C
+The alphabet goes ... B C D E — so C is before D.
+
+QR04
+Which of these words starts with a vowel?
+Tree
+Orange
+Milk
+Star
+Orange
+Orange starts with O — a vowel! (A, E, I, O, U)
+
+QR05
+Put these in ABC order: Sun, Star, Sand, Swan. Which one comes first?
+Star
+Sand
+Sun
+Swan
+Sand
+Sand (SA) is first, then Star (ST), then Sun (SU), then Swan (SW).

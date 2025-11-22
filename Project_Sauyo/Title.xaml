@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Project_Sauyo.Title"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black">
+
+    <!-- Main Grid -->
+    <Grid RowDefinitions="Auto,Auto,*,Auto"
+          ColumnDefinitions="*,*,*">
+        
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnMainPageTapped" />
+        </Grid.GestureRecognizers>
+
+        <!-- Background Image -->
+        <Image Source="class1.png"
+               Aspect="AspectFill"
+               Grid.RowSpan="4"
+               Grid.ColumnSpan="3"
+               ZIndex="-1" />
+
+        <!-- Top Logos -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="3"
+              Padding="10"
+              Margin="0,20,0,99"
+              ColumnDefinitions="Auto,*,Auto">
+
+            <!-- QCU Logo -->
+            <Image Source="qculogo.png"
+                   Aspect="AspectFit"
+                   HeightRequest="80"
+                   WidthRequest="80"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center" />
+
+            <!-- CCS Logo -->
+            <Image Source="ccslogo.png"
+                   Aspect="AspectFit"
+                   HeightRequest="80"
+                   WidthRequest="80"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   Grid.Column="2" />
+        </Grid>
+
+        <!-- Title -->
+        <Label Text="KARUNUNGAN ON WHEELS"
+               FontSize="35"
+               CharacterSpacing="2.5"
+               LineHeight="1.5"
+               FontFamily="SuperCartoon"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10,110,10,0"
+               TranslationX="2"
+               TranslationY="2"
+               Grid.Row="0"
+               Grid.ColumnSpan="3">
+        </Label>
+
+        <Label Text="KARUNUNGAN ON WHEELS"
+               FontSize="35"
+               CharacterSpacing="2.5"
+               LineHeight="1.5"
+               FontFamily="SuperCartoon"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10,110,10,0"
+               Grid.Row="0"
+               Grid.ColumnSpan="3">
+        </Label>
+
+        <!-- Subtitle -->
+        <Label Text="Enhancing functional literacy through locally developed instructional materials"
+               FontSize="16"
+               CharacterSpacing="1.4"
+               LineHeight="1.2"
+               FontFamily="SuperCartoon"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10,0,10,0"
+               Grid.Row="1"
+               Grid.ColumnSpan="3"
+               TranslationX="2"
+               TranslationY="2">
+        </Label>
+
+        <Label Text="Enhancing functional literacy through locally developed instructional materials"
+               FontSize="16"
+               CharacterSpacing="1.4"
+               LineHeight="1.2"
+               FontFamily="SuperCartoon"
+               TextColor="#EFEA50"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10,0,10,0"
+               Grid.Row="1"
+               Grid.ColumnSpan="3">
+        </Label>
+
+        <!-- Character Images -->
+        <Grid Grid.Row="2" Grid.ColumnSpan="3"
+          ColumnDefinitions="*,Auto,*"
+          Padding="0">
+
+            <Image
+            Grid.Column="1"
+            Source="idleanimation.gif"
+            IsAnimationPlaying="True"
+            Aspect="AspectFit"
+            HeightRequest="380"
+            WidthRequest="300"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+
+        </Grid>
+
+    </Grid>
+</ContentPage>

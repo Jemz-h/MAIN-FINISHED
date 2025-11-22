@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    x:Class="Project_Sauyo.Soon"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <Grid WidthRequest="347" HeightRequest="476" VerticalOptions="Center" HorizontalOptions="Center">
+
+
+        <BoxView
+                BackgroundColor="#8ADCE5"
+                CornerRadius="20" 
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill" />
+
+        <VerticalStackLayout
+                Spacing="20"
+                Padding="20">
+
+            <Grid HorizontalOptions="Center" TranslationY="-5">
+                <Label Text="OOPS!"
+                       FontSize="70"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="-1" TranslationY="-1"/>
+
+                <Label Text="OOPS!"
+                       FontSize="70"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="1" TranslationY="-1"/>
+
+                <Label Text="OOPS!"
+                       FontSize="70"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="-1" TranslationY="1"/>
+
+                <Label Text="OOPS!"
+                       FontSize="70"
+                       FontFamily="SuperCartoon"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TranslationX="1" TranslationY="1"/>
+
+                <Label Text="OOPS!"
+                       FontSize="70"
+                       FontFamily="SuperCartoon"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </Grid>
+
+            <Image 
+                    Source="oyoworking.png" 
+                    Aspect="AspectFit"
+                    WidthRequest="200"
+                    HeightRequest="200" TranslationY="-40" />
+
+            <Grid HorizontalOptions="Center" WidthRequest="314" TranslationY="-60">
+                <Label Text="That feature is under development. Stay tuned!"
+                           FontSize="33"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="1" TranslationY="1"/>
+
+                <Label Text="That feature is under development. Stay tuned!"
+                           FontSize="33"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="1" TranslationY="-1"/>
+
+                <Label Text="That feature is under development. Stay tuned!"
+                           FontSize="33"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="-1" TranslationY="1"/>
+
+
+                <Label Text="That feature is under development. Stay tuned!"
+                           FontSize="33"
+                           FontFamily="SuperCartoon"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TranslationX="-1" TranslationY="-1"/>
+
+                <Label Text="That feature is under development. Stay tuned!"
+                           FontSize="33"
+                           FontFamily="SuperCartoon"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Center"/>
+            </Grid>
+
+            <Button
+                    ImageSource="back_button.png"
+                    Clicked="OnCloseClicked"
+                    Text="RETURN"
+                    FontSize="38"
+                    TextColor="#000000"
+                    FontFamily="SuperCartoon"
+                    BackgroundColor="#FAC86B"
+                    HeightRequest="70"
+                    WidthRequest="250   "
+                    TranslationY="-70"
+                    CornerRadius="15" BorderWidth="1" BorderColor="#000000" />
+
+        </VerticalStackLayout>
+    </Grid>
+</toolkit:Popup>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Sauyo.Tutorial"
+             BackgroundImageSource="hallway.png">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout
+                x:Name="TutorialMainLayout"
+                Padding="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <Border
+                    x:Name="TutorialCard"
+                    Stroke="Transparent"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 16"
+                    Background="#00000080"
+                    WidthRequest="420"
+                    Padding="30">
+
+                    <VerticalStackLayout 
+                        x:Name="TutorialCardContent"
+                        Spacing="25">
+
+                        <Border
+                            x:Name="DescriptionContainer"
+                            Background="#80000000"
+                            Stroke="Black"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="20">
+
+                            <VerticalStackLayout 
+                                x:Name="DescriptionContentLayout"
+                                Spacing="20">
+
+                                <Grid x:Name="TitleContainer" HorizontalOptions="Center">
+
+                                    <Label
+                                        x:Name="TitleStrokeLabel"
+                                        Text="TUTORIAL"
+                                        FontFamily="SuperCartoon"
+                                        FontSize="64"
+                                        TextColor="Black"
+                                        TranslationX="2"
+                                        TranslationY="2"/>
+
+                                    <Label
+                                        x:Name="TitleMainLabel"
+                                        Text="TUTORIAL"
+                                        FontFamily="SuperCartoon"
+                                        FontSize="64"
+                                        TextColor="White"/>
+
+                                </Grid>
+
+                                <Grid x:Name="FirstDescriptionContainer" HorizontalOptions="Center">
+
+                                    <Label
+                                        x:Name="FirstDescriptionStroke"
+                                        Text="Choose the correct answer for each question by clicking on the option you think is correct."
+                                        FontFamily="SuperCartoon"
+                                        FontSize="30"
+                                        TextColor="Black"
+                                        TranslationX="2"
+                                        TranslationY="2"
+                                        LineBreakMode="WordWrap"
+                                        HorizontalTextAlignment="Center"
+                                        LineHeight="1.2"/>
+
+                                    <Label
+                                        x:Name="FirstDescriptionText"
+                                        Text="Choose the correct answer for each question by clicking on the option you think is correct."
+                                        FontFamily="SuperCartoon"
+                                        FontSize="30"
+                                        TextColor="#FFC50F"
+                                        LineBreakMode="WordWrap"
+                                        HorizontalTextAlignment="Center"
+                                        LineHeight="1.2"/>
+
+                                </Grid>
+
+                                <Grid x:Name="SecondDescriptionContainer" HorizontalOptions="Center">
+
+                                    <Label
+                                        x:Name="SecondDescriptionStroke"
+                                        Text="Each question is worth 1 point, and to advance to the next difficulty level, you must score at least 7 out of 10."
+                                        FontFamily="SuperCartoon"
+                                        FontSize="30"
+                                        TextColor="Black"
+                                        TranslationX="2"
+                                        TranslationY="2"
+                                        LineBreakMode="WordWrap"
+                                        HorizontalTextAlignment="Center"
+                                        LineHeight="1.2"/>
+
+                                    <Label
+                                        x:Name="SecondDescriptionText"
+                                        Text="Each question is worth 1 point, and to advance to the next difficulty level, you must score at least 7 out of 10."
+                                        FontFamily="SuperCartoon"
+                                        FontSize="30"
+                                        TextColor="#FFC50F"
+                                        LineBreakMode="WordWrap"
+                                        HorizontalTextAlignment="Center"
+                                        LineHeight="1.2"/>
+
+                                </Grid>
+
+                                <HorizontalStackLayout
+                                    x:Name="MegaphoneContainer"
+                                    Spacing="10"
+                                    HorizontalOptions="Center">
+
+                                    <VerticalStackLayout
+                                        x:Name="MegaphoneContent"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        Spacing="5">
+
+                                        <Image
+                                            x:Name="MegaphoneImage"
+                                            Source="megaphone.png"
+                                            WidthRequest="87"
+                                            HeightRequest="87"
+                                            HorizontalOptions="Center">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="OnMegaphoneClicked" />
+                                            </Image.GestureRecognizers>
+                                        </Image>
+
+
+                                        <Grid x:Name="MegaphoneLabelContainer" HorizontalOptions="Center">
+
+                                            <Label
+                                                x:Name="MegaphoneLabelStroke"
+                                                Text="PRESS TO READ THE QUESTION"
+                                                FontFamily="SuperCartoon"
+                                                FontSize="20"
+                                                TextColor="Black"
+                                                TranslationX="2"
+                                                TranslationY="2"
+                                                HorizontalTextAlignment="Center"/>
+
+                                            <Label
+                                                x:Name="MegaphoneLabelMain"
+                                                Text="PRESS TO READ THE QUESTION"
+                                                FontFamily="SuperCartoon"
+                                                FontSize="20"
+                                                TextColor="#F6FF79"
+                                                HorizontalTextAlignment="Center"/>
+
+                                        </Grid>
+
+                                    </VerticalStackLayout>
+
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout>
+                        </Border>
+
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Image
+            x:Name="back_button"
+            Source="back_button.png"
+            WidthRequest="55"
+            HeightRequest="55"
+            BackgroundColor="Transparent"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            Margin="20">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+            </Image.GestureRecognizers>
+        </Image>
+
+    </Grid>
+
+</ContentPage>

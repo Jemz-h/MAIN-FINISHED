@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Sauyo.Achievements"
+             Title="Achievements"
+             BackgroundImageSource="class2.png">
+    <ScrollView>
+        <AbsoluteLayout>
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="-1"
+        TranslationY="-1" />
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="-1"
+        TranslationY="0" />
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="-1"
+        TranslationY="1" />
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="0"
+        TranslationY="-1" />
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="0"
+        TranslationY="1" />
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="1"
+        TranslationY="-1" />
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="1"
+        TranslationY="0" />
+
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="Black"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        TranslationX="1"
+        TranslationY="1" />
+
+        <!-- White top layer -->
+        <Label 
+        Text="ACHIEVEMENTS"
+        FontFamily="SuperCartoon"
+        FontSize="50"
+        TextColor="White"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"
+        AbsoluteLayout.LayoutBounds="0.5,0.06,366,79"
+        AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Border
+        BackgroundColor="#FFFFFF"
+        StrokeShape="RoundRectangle 13"
+        Shadow="{Shadow Brush=Black, Opacity=0.3, Radius=10}"
+        AbsoluteLayout.LayoutBounds="0.5,0.43,347,465"
+        AbsoluteLayout.LayoutFlags="PositionProportional">
+
+            <VerticalStackLayout 
+            Spacing="14" 
+            Padding="0" 
+            HorizontalOptions="Center">
+
+                <Border
+                BackgroundColor="#8F68DD"
+                StrokeShape="RoundRectangle 20"
+                WidthRequest="300"
+                HeightRequest="42"
+                HorizontalOptions="Center"
+                Margin="0,18,0,0">
+
+                    <Label 
+                    Text="? > ?"
+                    FontFamily="SuperCartoon"
+                    FontSize="28"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+                </Border>
+
+                <Border
+                BackgroundColor="#E0F44C"
+                StrokeShape="RoundRectangle 14"
+                WidthRequest="303"
+                HeightRequest="75"
+                HorizontalOptions="Center">
+
+                    <VerticalStackLayout VerticalOptions="Center">
+
+                        <Label 
+                        Text="TOTAL TIME PLAYED"
+                        FontFamily="SuperCartoon"
+                        FontSize="28"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"/>
+
+                        <Label 
+                        Text="1.5 HRS"
+                        FontFamily="SuperCartoon"
+                        FontSize="21"
+                        TextColor="#DA7D2B"
+                        HorizontalTextAlignment="Center"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <Border
+                BackgroundColor="#E0F44C"
+                StrokeShape="RoundRectangle 14"
+                WidthRequest="303"
+                HeightRequest="95"
+                HorizontalOptions="Center">
+
+                    <VerticalStackLayout VerticalOptions="Center">
+
+                        <Label 
+                        Text="TOKENS EARNED"
+                        FontFamily="SuperCartoon"
+                        FontSize="28"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"/>
+
+
+                        <HorizontalStackLayout 
+                        Spacing="5"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+
+                            <HorizontalStackLayout Spacing="1">
+                                <Image Source="bronze.png" WidthRequest="50" HeightRequest="50"/>
+                                <Label 
+                                Text="x24"
+                                FontFamily="SuperCartoon"
+                                FontSize="21"
+                                TextColor="Black"
+                                VerticalOptions="Center"/>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Spacing="1">
+                                <Image Source="silver.png" WidthRequest="50" HeightRequest="50"/>
+                                <Label 
+                                Text="x24"
+                                FontFamily="SuperCartoon"
+                                FontSize="21"
+                                TextColor="Black"
+                                VerticalOptions="Center"/>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Spacing="1">
+                                <Image Source="gold.png" WidthRequest="43" HeightRequest="43"/>
+                                <Label 
+                                Text="x24"
+                                FontFamily="SuperCartoon"
+                                FontSize="21"
+                                TextColor="Black"
+                                VerticalOptions="Center"/>
+                            </HorizontalStackLayout>
+
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <Border
+                BackgroundColor="#E0F44C"
+                StrokeShape="RoundRectangle 14"
+                WidthRequest="303"
+                HeightRequest="113"
+                HorizontalOptions="Center">
+
+                    <VerticalStackLayout VerticalOptions="Center">
+
+                        <Label 
+                        Text="COMPLETION"
+                        FontFamily="SuperCartoon"
+                        FontSize="28"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"/>
+
+                        <Label 
+                        Text="LESSONS: 3"
+                        FontFamily="SuperCartoon"
+                        FontSize="28"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"
+                        Margin="0,0,105,0"/>
+
+                        <Label 
+                        Text="LEVELS: 15"
+                        FontFamily="SuperCartoon"
+                        FontSize="28"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"
+                        Margin="0,0,120,0"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+            </VerticalStackLayout>
+
+        </Border>
+            <Image
+                x:Name="back_button"
+                Source="back_button.png"
+                HeightRequest="55"
+                WidthRequest="55"
+                AbsoluteLayout.LayoutBounds="0.02,1,55,55"
+                AbsoluteLayout.LayoutFlags="PositionProportional">  
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

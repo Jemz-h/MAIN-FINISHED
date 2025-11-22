@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Sauyo.Menu"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid RowDefinitions="*, Auto, Auto, Auto, Auto">
+        <Image Source="class1.png" 
+               Aspect="AspectFill" 
+               Grid.RowSpan="5"/>
+
+        <Label Text="KARUNUNGAN ON WHEELS"
+               TextColor="Black"
+               FontSize="35"
+               CharacterSpacing="2.5"
+               LineHeight="1.5"
+               FontFamily="SuperCartoon"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               HorizontalTextAlignment="Center"
+               Padding="0, 80, 0, 0"
+               Grid.Row="0"
+               TranslationX="2"
+               TranslationY="2">
+            
+        </Label>
+
+        <Label Text="KARUNUNGAN ON WHEELS"
+               TextColor="White"
+               FontSize="35"
+               CharacterSpacing="2.5"
+               LineHeight="1.5"
+               FontFamily="SuperCartoon"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               HorizontalTextAlignment="Center"
+               Padding="0, 80, 0, 0"
+               Grid.Row="0">
+        </Label>
+
+
+        <Label Text="ENHANCING FUNCTIONAL LITERACY THROUGH&#x0a;LOCALLY DEVELOPED INSTRUCTIONAL MATERIALS"
+           TextColor="Black"
+           FontSize="16"
+           FontFamily="SuperCartoon"
+           LineHeight="1.4"
+           CharacterSpacing="1.4"
+           Margin="0,45,0,0"
+           HorizontalOptions="Center"
+           VerticalOptions="Start"
+           HorizontalTextAlignment="Center"
+           Padding="0, 130, 0, 0"
+           Grid.Row="0"
+           TranslationX="2"
+           TranslationY="2">
+            
+        </Label>
+
+        <Label Text="ENHANCING FUNCTIONAL LITERACY THROUGH&#x0a;LOCALLY DEVELOPED INSTRUCTIONAL MATERIALS"
+           TextColor="#FFC50F"
+           FontSize="16"
+           FontFamily="SuperCartoon"
+           LineHeight="1.4"
+           CharacterSpacing="1.4"
+           Margin="0,45,0,0"
+           HorizontalOptions="Center"
+           VerticalOptions="Start"
+           HorizontalTextAlignment="Center"
+           Padding="0, 130, 0, 0"
+           Grid.Row="0">
+        </Label>
+
+
+        <Image Source="sisa.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HeightRequest="270"
+               WidthRequest="250"
+               Grid.RowSpan="5"
+               Margin="0, -40, 0, 0" />
+
+        <VerticalStackLayout
+    Grid.Row="1" Grid.ColumnSpan="3"
+    HorizontalOptions="Center"
+    VerticalOptions="Start"
+    Spacing="1"         
+    Margin="0,10,0,40">
+           
+
+            <Button Text="START"
+            FontSize="21"
+            FontFamily="SuperCartoon"
+            WidthRequest="250"
+            BackgroundColor="White"
+            TextColor="Black"
+            Margin="0,5"
+            Clicked="OnStartClicked" />
+
+            <Button Text="TUTORIAL"
+            FontSize="21"
+            FontFamily="SuperCartoon"
+            WidthRequest="250"
+            BackgroundColor="White"
+            TextColor="Black"
+            Margin="0,5"
+            Clicked="OnTutorialClicked" />
+
+            <Button Text="SETTINGS"
+            FontSize="21"
+            FontFamily="SuperCartoon"
+            WidthRequest="250"
+            BackgroundColor="White"
+            TextColor="Black"
+            Margin="0,5"
+            Clicked="OnSettingsClicked" />
+
+            <Button Text="ABOUT"
+            FontSize="21"
+            FontFamily="SuperCartoon"
+            WidthRequest="250"
+            BackgroundColor="White"
+            TextColor="Black"
+            Margin="0,5"
+            Clicked="OnAboutClicked" />
+
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

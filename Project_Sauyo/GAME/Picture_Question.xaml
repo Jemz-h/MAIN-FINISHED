@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Sauyo.Picture_Question"
+             BackgroundImageSource="darkest.png">
+
+    <Grid>
+
+        <VerticalStackLayout Padding="10,50,10,20" Spacing="8">
+
+            <Label x:Name="DifficultyLabel"
+                   Text="Easy"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#FF9D00"
+                   HorizontalOptions="Center"/>
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label x:Name="QuestionLabel"
+                       Text="Question"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       TextColor="White"/>
+
+                <Label x:Name="QuestionNumber"
+                       Text="1"
+                       Margin="5,0,0,0"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       TextColor="White"/>
+            </HorizontalStackLayout>
+
+            <!-- IMAGE BOX (Hidden by default) -->
+            <Border x:Name="ImageBorder"
+                    Background="White"
+                    Stroke="#B6771D"
+                    StrokeShape="RoundRectangle 13"
+                    Padding="0"
+                    WidthRequest="280"
+                    HeightRequest="220"
+                    IsVisible="False">
+                <Grid>
+                    <Image x:Name="QuestionImage"
+                           Aspect="AspectFit"
+                           Margin="10"/>
+                </Grid>
+            </Border>
+
+            <!-- QUESTION TEXT -->
+            <Label x:Name="QuestionTextLabel"
+                   Text="Question goes here"
+                   FontAttributes="Bold"
+                   FontSize="17"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+
+            <!-- CHOICES -->
+            <Button x:Name="CBtn1" WidthRequest="260" Clicked="OnAnswerButtonClicked"/>
+            <Button x:Name="CBtn2" WidthRequest="260" Clicked="OnAnswerButtonClicked"/>
+            <Button x:Name="CBtn3" WidthRequest="260" Clicked="OnAnswerButtonClicked"/>
+            <Button x:Name="CBtn4" WidthRequest="260" Clicked="OnAnswerButtonClicked"/>
+
+            <!-- SKIP BUTTON (No RenderTransform needed) -->
+            <Grid x:Name="SkipContainer">
+                <Button x:Name="SkipButton"
+            Text="Skip"
+            WidthRequest="150"
+            HeightRequest="45"
+            BackgroundColor="#DA951F"
+            TextColor="White"
+            FontAttributes="Bold"
+            Clicked="OnSkipButtonClicked"/>
+            </Grid>
+
+
+            <Label x:Name="SkipLabel"
+                   Text="Available Skip: 3"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+
+        <!-- CLOSE BUTTON + SCORE BAR -->
+        <Grid Padding="10"
+              ColumnDefinitions="Auto,*"
+              VerticalOptions="Start"
+              HeightRequest="70">
+
+            <Button x:Name="CloseButton"
+                    Text="X"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    BackgroundColor="#C5172E"
+                    TextColor="White"
+                    Clicked="OnCloseClicked"/>
+
+            <Border Grid.Column="1"
+                    Background="LightGray"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10,5"
+                    HorizontalOptions="End"
+                    Margin="40,10,0,0">
+                <Label x:Name="ScoreLabel"
+                       Text="Score: 0/5"
+                       FontSize="12"
+                       FontAttributes="Bold"/>
+            </Border>
+
+        </Grid>
+
+    </Grid>
+</ContentPage>

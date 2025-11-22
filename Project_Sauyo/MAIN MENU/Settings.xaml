@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Project_Sauyo.Settings"
+    Title="Settings"
+    BackgroundImageSource="class1.png">
+
+    <AbsoluteLayout>
+
+        <!-- SETTINGS TITLE -->
+        <Grid AbsoluteLayout.LayoutBounds="0.5,0.10,AutoSize,AutoSize"
+              AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Label 
+                Text="SETTINGS" 
+                FontSize="64" 
+                FontFamily="SuperCartoon"
+                TextColor="Black" 
+                CharacterSpacing="1"
+                TranslationX="2" 
+                TranslationY="2"/>
+            <Label 
+                Text="SETTINGS" 
+                FontSize="64"  
+                FontFamily="SuperCartoon"
+                CharacterSpacing="1"
+                TextColor="White" />
+        </Grid>
+
+        <!-- SILENCE BUTTON -->
+        <Image 
+            x:Name="silence_button" 
+            Source="silence_button.png" 
+            HeightRequest="48"
+            AbsoluteLayout.LayoutBounds="0.10,0.25,48,48"
+            AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <!-- MUSIC BUTTON -->
+        <Image 
+            x:Name="music_button" 
+            Source="music_button.png" 
+            HeightRequest="48"
+            AbsoluteLayout.LayoutBounds="0.90,0.25,48,48"
+            AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <!-- BACK BUTTON -->
+        <Image
+            x:Name="back_button"
+            Source="back_button.png"
+            HeightRequest="55"
+            WidthRequest="55"
+            AbsoluteLayout.LayoutBounds="0.02,1,55,55"
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <!-- PROFILE BUTTON -->
+        <Grid AbsoluteLayout.LayoutBounds="0.5,0.38,335,55"
+              AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Button x:Name="profile_button"
+                    Text="PROFILE"
+                    FontFamily="SuperCartoon"
+                    TextColor="White"
+                    FontSize="32"
+                    CornerRadius="16"
+                    HeightRequest="55"
+                    WidthRequest="335"
+                    Clicked="ProfileClicked">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 0">
+                        <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                        <GradientStop Color="#3C467B" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Image Source="student1.png"
+               HeightRequest="50"
+               AbsoluteLayout.LayoutBounds="0.15,0.38,50,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <!-- THEMES BUTTON -->
+        <Grid AbsoluteLayout.LayoutBounds="0.5,0.48,335,55"
+              AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Button x:Name="theme_button"
+                    Text="THEMES"
+                    FontFamily="SuperCartoon"
+                    TextColor="White"
+                    TranslationX="2"
+                    TranslationY="2"
+                    FontSize="32"
+                    CornerRadius="13"
+                    HeightRequest="55"
+                    WidthRequest="335"
+                    Clicked="ThemeClicked">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 0">
+                        <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                        <GradientStop Color="#FF9D00" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Image Source="themes.png"
+               HeightRequest="50"
+               AbsoluteLayout.LayoutBounds="0.15,0.48,50,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <!-- ACHIEVEMENTS BUTTON -->
+        <Grid AbsoluteLayout.LayoutBounds="0.5,0.58,335,55"
+              AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Button x:Name="achievements_button"
+                    Text="ACHIEVEMENTS"
+                    FontFamily="SuperCartoon"
+                    TextColor="White"
+                    TranslationX="2"
+                    TranslationY="2"
+                    FontSize="32"
+                    CornerRadius="13"
+                    HeightRequest="55"
+                    WidthRequest="335"
+                    Clicked="AchievementsClicked">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 0">
+                        <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                        <GradientStop Color="#CA22A6" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Image Source="gold.png"
+               HeightRequest="50"
+               AbsoluteLayout.LayoutBounds="0.15,0.58,50,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <!-- SIGN OUT BUTTON -->
+        <Grid AbsoluteLayout.LayoutBounds="0.5,0.85,220,50"
+              AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Button x:Name="signout_button"
+                    Text="Sign Out"
+                    FontFamily="SuperCartoon"
+                    TextColor="White"
+                    TranslationX="2"
+                    TranslationY="2"
+                    FontSize="32"
+                    CornerRadius="16"
+                    HeightRequest="50"
+                    WidthRequest="220"
+                    Clicked="SignOutClicked">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 0">
+                        <GradientStop Color="#872626" Offset="0.0"/>
+                        <GradientStop Color="#ED4343" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+    </AbsoluteLayout>
+</ContentPage>
